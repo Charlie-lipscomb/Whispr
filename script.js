@@ -1,12 +1,14 @@
+// Firebase config for Whispr
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "SENDER_ID",
-  appId: "APP_ID"
+  apiKey: "AIzaSyCy8oOsmGZt_NkeDiIqbnwe5RyrcuhFWsQ",
+  authDomain: "whispr-473ce.firebaseapp.com",
+  projectId: "whispr-473ce",
+  storageBucket: "whispr-473ce.firebasestorage.app",
+  messagingSenderId: "43414168346",
+  appId: "1:43414168346:web:ca482b1151c3aeee6782a3"
 };
 
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
