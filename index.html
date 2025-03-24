@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Whispr - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to Whispr</h1>
+  <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+  <button onclick="postContent()">Post</button>
+  <div id="feed"></div>
+  <br>
+  <a href="messages.html">Go to Messages</a>
+  <button onclick="logout()">Logout</button>
+
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
