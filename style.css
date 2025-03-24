@@ -1,36 +1,134 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f5f5;
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #c8f7c5;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
   padding: 20px;
-  color: #222;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  color: #4a00e0;
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-input, textarea, button {
-  width: 300px;
+form input, form textarea {
+  width: 100%;
   padding: 10px;
-  margin: 10px 0;
-  font-size: 16px;
-  display: block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-textarea {
-  height: 80px;
+form input:focus, form textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
-#feed, #chat {
-  background: white;
+form button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
   padding: 10px;
   border-radius: 5px;
-  margin-top: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #4a00e0;
-  text-decoration: none;
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Feed */
+.feed {
+  list-style: none;
+  padding: 0;
+}
+
+.feed li {
+  background: #eaf4e9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.feed li p {
+  margin: 0;
+}
+
+/* Chat */
+.chat {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fafafa;
+}
+
+.chat p {
+  margin: 0 0 10px;
+  padding: 10px;
+  background: #e0f7fa;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav h1 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  form button {
+    font-size: 0.9rem;
+  }
 }
